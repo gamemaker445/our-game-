@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvyd7dg4c80ss"]
+
+[ext_resource type="Texture2D" uid="uid://h74s7ykb6af8" path="res://tileset16x16.png" id="1_wqtmf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3jlpn"]
+size = Vector2(36.8095, 20.853)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+position = Vector2(11456, 5883)
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D"]
+position = Vector2(3690.5, 2106.5)
+scale = Vector2(179.146, 144.244)
+texture = ExtResource("1_wqtmf")
+region_enabled = true
+region_rect = Rect2(15.4164, 0.619165, 48.6058, 45.5263)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+visible = false
+position = Vector2(3627, 1556)
+scale = Vector2(236.787, 263.272)
+shape = SubResource("RectangleShape2D_3jlpn")
